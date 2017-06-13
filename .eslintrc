@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "formidable/configurations/es6-react",
+    "plugin:flowtype/recommended"
+  ],
+  "plugins": [
+    "flowtype"
+  ],
+  "rules": {
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "func-style": 0
+  }
+}

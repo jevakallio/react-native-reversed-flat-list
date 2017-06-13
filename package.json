@@ -1,0 +1,56 @@
+{
+  "name": "react-native-reversed-flat-list",
+  "version": "1.0.0",
+  "description": "A reversed React Native FlatList, useful for chats and whatnot",
+  "keywords": [
+    "react",
+    "react-component",
+    "react-native",
+    "ios",
+    "android",
+    "chat",
+    "flatlist",
+    "listview"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jevakallio/react-native-reversed-flat-list.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jevakallio/react-native-reversed-flat-list/issues"
+  },
+  "homepage": "https://github.com/jevakallio/react-native-reversed-flat-list#readme",
+  "author": "Jani Eväkallio",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint index.js lib",
+    "flow": "flow check",
+    "prerelease": "npm run lint && npm run flow"
+  },
+  "jest": {
+    "preset": "jest-react-native",
+    "testPathIgnorePatterns": [
+      "node_modules",
+      "__data__"
+    ]
+  },
+  "peerDependencies": {
+    "react-native": ">=0.44.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.2",
+    "babel-jest": "^16.0.0",
+    "babel-preset-react-native": "^1.9.0",
+    "eslint": "^2.10.2",
+    "eslint-config-formidable": "^2.0.1",
+    "eslint-plugin-babel": "^3.2.0",
+    "eslint-plugin-filenames": "^1.1.0",
+    "eslint-plugin-flowtype": "^2.19.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-react": "^6.0.0",
+    "flow-bin": "^0.32.0",
+    "react": "16.0.0-alpha.6",
+    "react-native": "^0.44.0"
+  }
+}
