@@ -1,6 +1,6 @@
-<h1 align="center">react-native-reversed-flat-list</h1>
+<h1>react-native-reversed-flat-list</h1>
 
-<h4 align="center">
+<h4>
   A reversed React Native FlatList, useful for creating performant bottom-anchored lists for chats and whatnot
 </h4>
 
