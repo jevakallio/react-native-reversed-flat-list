@@ -1,19 +1,50 @@
 <h1 align="center">react-native-reversed-flat-list</h1>
 
 <h4 align="center">
-  A reversed React Native FlatList, useful for chats and whatnot
+  A reversed React Native FlatList, useful for creating performant bottom-anchored lists for chats and whatnot
 </h4>
 
 ***
 
 ## Documentation
 
-Use exactly like you would use [FlatList](https://facebook.github.io/react-native/docs/flatlist.html). Docs to be written.
+Use exactly like you would use [FlatList](https://facebook.github.io/react-native/docs/flatlist.html).
+
+```diff
+- import {FlatList} from 'react-native';
++ import ReversedFlatList from 'react-native-reversed-flat-list';
+
+const MessageList = ({ messages, renderMessage }) => (
+-  <FlatList
++  <ReversedFlatList
+    data={messages}
+    renderItem={renderMessage
+  />
+);
+```
+
+## How does it work
+
+_aka. The One Weird Trick They Don't Want You To Know About Making Performant Reverse Lists in React Native_
+
+I learned the basic mechanism from [expo/react-native-invertible-scroll-view](https://github.com/expo/react-native-invertible-scroll-view). The trick is to scale transform the FlatList's backing ScrollView to -1 in order to flip it on it's vertical axis, causing the list to look upside-down-mirrored. We then perform the same flip for each row within the list to turn them back the right way around.
+
+```js
+const styles = StyleSheet.create({
+  flip: {
+    transform: [{ scaleY: -1 }]
+  }
+});
+```
+
+Surprisingly, this works well, fast and reliably.
+
 
 ## Attribution
 
-The basic mechanism is the same as [expo/react-native-invertible-scroll-view](https://github.com/expo/react-native-invertible-scroll-view), updated for FlatList.
+- The flip transform trick [as far as I know](https://github.com/expo/react-native-invertible-scroll-view/commit/93b06f8c3e5a08d3c82f105784801b2f4aff65f9), by @Satya164. 
+- Initial FlatList implementation prototyped by [@joshyhargreaves](https://github.com/joshyhargreaves).
 
-Initial FlatList implementation was prototyped by [@joshyhargreaves](https://github.com/joshyhargreaves).
+## License
 
 [MIT licensed](LICENSE)
