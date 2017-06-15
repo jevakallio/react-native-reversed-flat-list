@@ -4,6 +4,7 @@
   A reversed React Native FlatList, useful for creating performant bottom-anchored lists for chats and whatnot
 </h4>
 
+<img src="demo.gif" alt="Demo" width="200" />
 ***
 
 ## Documentation
