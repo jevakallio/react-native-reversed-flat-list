@@ -43,7 +43,7 @@ Surprisingly, this works well, fast and reliably.
 
 ## Attribution
 
-- The flip transform trick [as far as I know](https://github.com/expo/react-native-invertible-scroll-view/commit/93b06f8c3e5a08d3c82f105784801b2f4aff65f9), by @Satya164. 
+- The flip transform trick [as far as I know](https://github.com/expo/react-native-invertible-scroll-view/commit/93b06f8c3e5a08d3c82f105784801b2f4aff65f9), by [@Satya164](https://github.com/Satya164). 
 - Initial FlatList implementation prototyped by [@joshyhargreaves](https://github.com/joshyhargreaves).
 
 ## License
