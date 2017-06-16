@@ -24,6 +24,8 @@ const MessageList = ({ messages, renderMessage }) => (
 );
 ```
 
+This component has not been tested with all the different options, bells and whistles of FlatList. If you hit a use case that doesn't work, please submit a Pull Request!
+
 ## How does it work
 
 _aka. The One Weird Trick They Don't Want You To Know About Making Performant Reverse Lists in React Native_
