@@ -28,7 +28,7 @@ const MessageList = ({ messages, renderMessage }) => (
 
 _aka. The One Weird Trick They Don't Want You To Know About Making Performant Reverse Lists in React Native_
 
-I learned the basic mechanism from [expo/react-native-invertible-scroll-view](https://github.com/expo/react-native-invertible-scroll-view). The trick is to scale transform the FlatList's backing ScrollView to -1 in order to flip it on it's vertical axis, causing the list to look upside-down-mirrored. We then perform the same flip for each row within the list to turn them back the right way around.
+I learned the basic mechanism from [expo/react-native-invertible-scroll-view](https://github.com/expo/react-native-invertible-scroll-view). The trick is to scale transform the FlatList's backing ScrollView to -1 in order to flip it on it's horizontal vertical axis, causing the list to look upside-down-mirrored. We then perform the same flip for each row within the list to turn them back the right way around. (To make it more natural to use the component with time-ordered datasets (oldest first), we also reverse the dataset.)
 
 ```js
 const styles = StyleSheet.create({
