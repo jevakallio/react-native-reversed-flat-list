@@ -19,7 +19,7 @@ const MessageList = ({ messages, renderMessage }) => (
 -  <FlatList
 +  <ReversedFlatList
     data={messages}
-    renderItem={renderMessage
+    renderItem={renderMessage}
   />
 );
 ```
