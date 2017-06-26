@@ -26,6 +26,10 @@ const MessageList = ({ messages, renderMessage }) => (
 
 This component has not been tested with all the different options, bells and whistles of FlatList. If you hit a use case that doesn't work, please submit a Pull Request!
 
+### Known issues
+
+- [onEndReached doesn't work as expected](https://github.com/jevakallio/react-native-reversed-flat-list/issues/3).
+
 ## How does it work
 
 _aka. The One Weird Trick They Don't Want You To Know About Making Performant Reverse Lists in React Native_
@@ -45,7 +49,7 @@ Surprisingly, this works well, fast and reliably.
 
 ## Attribution
 
-- The flip transform trick [as far as I know](https://github.com/expo/react-native-invertible-scroll-view/commit/93b06f8c3e5a08d3c82f105784801b2f4aff65f9), by [@Satya164](https://github.com/Satya164). 
+- The flip transform trick [as far as I know](https://github.com/expo/react-native-invertible-scroll-view/commit/93b06f8c3e5a08d3c82f105784801b2f4aff65f9), by [@Satya164](https://github.com/Satya164).
 - Initial FlatList implementation prototyped by [@joshyhargreaves](https://github.com/joshyhargreaves).
 
 ## License
