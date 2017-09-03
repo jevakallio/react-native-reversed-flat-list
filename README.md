@@ -1,3 +1,4 @@
+
 <h1>react-native-reversed-flat-list</h1>
 
 <h4>
@@ -5,7 +6,17 @@
 </h4>
 
 <img src="demo.gif" alt="Demo" width="200" />
-***
+
+# :warning: DEPRECATED :warning:
+
+React Native FlatList now supports reversed rendering out of the box using the **inverted** prop:
+
+```js
+  <FlatList inverted {...} />
+```
+
+I recommend using it instead. Documentation below for legacy maintenance purposes.
+
 
 ## Documentation
 
